@@ -3,8 +3,13 @@
 ## puts itself into deep sleep — the CP keeps the link alive and wakes
 ## the host on incoming UDP packets (or the user's wake-up GPIO).
 dependencies:
+<<<<<<< Updated upstream:examples/power_save/host/network_split__host_deep_sleep/esp_host/main/idf_component.yml
   cmd_system:
     path: ${IDF_PATH}/examples/system/console/advanced/components/cmd_system
+=======
+  espressif/iperf:
+    version: "~0.1.4"
+>>>>>>> Stashed changes:slave/main/idf_component.yml
   espressif/iperf-cmd:
     matches:
       - if: "idf_version >=6.0"
